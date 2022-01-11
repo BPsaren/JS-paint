@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icon.png">
+    <title>JS Paint</title>
+    <link rel="stylesheet" href="css/paint.css">
+</head>
+
+<body>
+    <!-- this is the navigation part -->
+
+    <nav id="navbar">
+        <div id="nav-item1">
+            <a href="index.html">Home</a>
+            <a href="#" style="color: #ffca2a; font-weight: 600;">Paint</a>
+            <a href="updates.html">Updated</a>
+            <a href="aboutus.html">About Us</a>
+        </div>
+        <div id="nav-item2">
+            <img src="images/icon.png" alt="error">
+            <h1>JS PAINT</h1>
+        </div>
+        <div id="nav-item3">
+            <a class="team" href="http://willbe updated" rel="noopener noreferrer"><img src="images/face.png"
+                    alt="profile">
+                Aiswarya
+            </a>
+            <a class="team" href="http://willbe updated" rel="noopener noreferrer"><img src="images/Bishnu.jpg"
+                    alt="profile">
+                Bishnupada
+            </a>
+            <a class="team" href="http://willbe updated" rel="noopener noreferrer"><img src="images/face.png"
+                    alt="profile">
+                Keya
+            </a>
+            <a class="team" href="http://willbe updated" rel="noopener noreferrer"><img src="images/face.png"
+                    alt="profile">
+                Md. Eshan
+            </a>
+            <a class="team" href="http://willbe updated" rel="noopener noreferrer"><img src="images/face.png"
+                    alt="profile">
+                Ashikul
+            </a>
+            <a class="team" href="http://Supriyo-Dey.html" rel="noopener noreferrer"><img src="images/supriyodey.jpg"
+                    alt="profile">
+                Supriyo
+            </a>
+        </div>
+    </nav>
+
+    <!-- the body part -->
+
+    <div class="body3">
+
+        <div id="controls" class="drop-shadow">
+            <a class='round-button' onclick=lineColor(2) style="background:blue; grid-area: blue;"></a>
+            <a class='round-button' onclick=lineColor(1) style="background:black; grid-area: black;"></a>
+            <a class='round-button' onclick=lineColor(3) style="background:green; grid-area: green;"></a>
+            <a class='round-button' onclick=lineColor(4) style="background:red; grid-area: red;"></a>
+            <a class='round-button' onclick=lineColor(5) style="background:yellow; grid-area: yellow;"></a>
+            <a class='round-button' onclick=lineColor(6) style="background:orange; grid-area: orange;"></a>
+            <a class='round-button' onclick=lineColor(7) style="background:pink; grid-area: pink;"></a>
+            <a class='round-button' onclick=lineColor(8) style="background:brown; grid-area: brown;"></a>
+            <a class='square-button' onclick=lineColor(9) style="color: black; background:grey; grid-area: eraser;">Erase</a>
+            <a class='square-button' onclick=clearCanvas() style="color: black; background:grey; grid-area: clear;">Clear</a>
+            <a class='square-button' onclick=downloadCanvas() style="color: black; background:grey; grid-area: download;">Download as
+                PNG</a>
+            <h4 style='grid-area: current; color: black;' id="tool">Current Tool:</h4>
+            <form
+                style=" grid-area: line;">
+                <label for="lineStroke" style="width: 150px; grid-area: one;">Line Width:</label>
+                <input value="5" type="number" id="lineStroke" style="grid-area: two; width: 72px; height: 20px;" />
+                <input type="button" onclick="strokeForm();" value="Change" class="square-button"
+                    style="grid-area: three; background: grey; color: white; height: fit-content; width: 72px;" />
+            </form>
+        </div>
+
+        <div class="board-container">
+            <canvas id="board" class="drop-shadow"></canvas>
+        </div>
+
+    </div>
+    <script src="js/paint.js"></script>
+    <script>
+        init("board");
+    </script>
+</body>
+
+</html>

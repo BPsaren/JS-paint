@@ -1,0 +1,333 @@
+/* css reset */
+*{
+    margin: 0%;
+    padding: 0%;
+    height: auto;
+    /* background-color: rgb(76, 100, 168); */
+}
+body{
+    background-color: #490b3d;
+    color: white;
+    height: 100%;
+    font-family: 'Baloo 2', cursive;
+}
+a{
+    text-decoration: none;
+    color: #f1b814;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* navigation bar design */
+#navbar{
+    /* background-color: rgb(178, 111, 255); */
+    /* background-color: #490b3d; */
+    height: auto;
+    width: auto;
+    margin: 2px;
+    padding: 5px;
+    /* border-radius: 12px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+} 
+
+#nav-item1{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+#nav-item1>a{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+}
+#nav-item2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+}
+#nav-item2>h1{
+    font-family: 'Baloo 2';
+}
+.team{
+    width: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#nav-item3{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 35%;
+}
+
+#nav-item1 a::before{
+    content: " ";
+    height: 0px;
+    width: 0px;
+    background-color: #f1b814;
+    position: absolute;
+    top: 7.5%;
+    transition: 0.5s;
+}
+#nav-item1 a:hover::before{
+    content: " ";
+    height: 2px;
+    width: 20px;
+    background-color: #f1b814;
+    position: absolute;
+    top: 7.5%;
+}
+
+/* body  */
+#body2{
+    /* margin: 5px; */
+    /* padding: 5px; */
+    /* width: 90%; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+/* designing about js paint part  */
+.heading{
+    margin-top: 50px;
+    margin-left: 50px;
+    /* margin: 50px; */
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    color: #da4977;
+}
+.items{
+    padding: 20px 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    /* color: #f1b814; */
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: auto;
+    align-items: center;
+    grid-gap: 30px;
+    
+}
+.items img{
+    border-radius: 20px;
+}
+.items li{
+    color: #f1b814;
+    text-transform: capitalize;
+}
+
+.item2,
+.item4{
+
+background-color: #3d0933;
+
+}
+
+/* our team  */
+.our_team{
+    margin: 20px 0px;
+    padding: 0px 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    grid-template-rows: repeat(2, auto);
+    /* flex-flow: row wrap; */
+    justify-content: space-around;
+    grid-row-gap: 20px;
+    
+}
+
+.our_team h2{
+    margin: 0px;
+    grid-column: 1/7;
+    text-align: center;
+}
+
+.our_team img{
+    width: 50px;
+    border: 2px solid #da4977;
+    border-radius: 50%;
+}
+
+.our_team h3{
+    font-family: 'Baloo 2';
+    font-weight: 400;
+}
+
+
+/* designing contact us part  */
+.contact{
+    width: 25%;
+    margin: 10px;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.social a{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+.social img{
+    height: 30px;
+    width: 30px;
+    margin: 0px 10px;
+    padding: 2px;
+    filter: invert(1);
+    /* border: 2px solid red; */
+}
+
+.map{
+    margin: 50px;
+    padding: 0px 50px 0px 10px;
+    height: 400px;
+    width: 800px;
+}
+
+/* feedback section  */
+
+.feedback{
+    width: fit-content;
+    height: fit-content;
+    margin: 0px auto 50px;
+}
+
+.feedback>.heading{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+form{
+    width: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    
+}
+
+.fromgroup1{
+    margin: 10px;
+    text-align: center;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.fromgroup1>input{
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    background-color: transparent;
+    border: 2px solid #f1b814;
+    border-radius: 10px;
+    outline: none;
+}
+.fromgroup2{
+    margin: 10px;
+    /* text-align: center; */
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.fromgroup2>textarea{
+    height: 55px;
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+    background-color: transparent;
+    border: 2px solid #f1b814;
+    border-radius: 10px;
+    outline: none;
+}
+.fromgroup3{
+    margin: 10px;
+    /* text-align: center; */
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+.fromgroup3>button{
+    width: 105px;
+    height: 32px;
+    background-color: transparent;
+    border: 2px solid #f1b814;
+    border-radius: 20px;
+    /* color: #da4977; */
+    color: tomato;
+    font-family: 'baloo 2', cursive;
+    transition: 0.5s;
+}
+.fromgroup3>button:hover{
+    -webkit-animation: swing 1s ease;
+    animation: swing 0.5s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+::placeholder{
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+/* #item-1{
+    height: 20px;
+    width: 200px;
+}
+#item-2{
+    height: 20px;
+    width: 200px;
+}
+#item-3{
+    height: 20px;
+    width: 200px;
+} */
+@keyframes swing {
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
